@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}{% static 'css/m-detail.css' %}{% endblock %}
+
+{% block content %}
+
+<section class="artist-content">
+    <!-- 아티스트 정보 -->
+    <div class="artist_bundle">
+
+       <div class="container">
+           <div class="item music_title">20</div>
+           <div class="item music_img_grid">
+               <div class = 'album_art'>
+                   <div class = 'cover-img-box'>
+                        <div class = 'cover_outline'></div>
+                        <div class = 'cover_sideline'></div>
+                        <div class = 'white_sideline'></div>
+                        <img class = "cover_img" src='{% static 'image/16.jpg' %}' alt = '혁오-공드리'>
+                   </div>
+               </div>
+           </div>
+
+           <div class="item music_info_grid">
+               <dl class="music_info">
+                   <dt id="music_info-dt">아티스트</dt>
+                   <dd>혁오 (HYUKOH)</dd>
+                   <dt id="music_info-dt">등록일</dt>
+                   <dd>2014.09.18</dd>
+                   <dt id="music_info-dt">특징</dt>
+                   <dd>#감성적인 #잔잔한 #밴드사운드</dd>
+               </dl>
+           </div>
+
+           <div class="item artist_SNS">
+              
+           </div>
+
+           <div class="item artist_tracklist">
+               <div class="music_intro">|곡 소개|</div>
+           </div>
+
+           <div class="item community">
+           </div>
+
+           <div class="item itro_page">
+               <div class="intro_box">
+                   20대의 경계에서 노래하는 아포리즘<br>
+                   섬세한 사운드와 감성의 밴드 혁오의 데뷔 앨범, 20<br>
+                   
+                   <iframe width="1280" height="720" src="https://www.youtube.com/embed/UeCTNhP-E_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+              
+           </div>
+       </div>  
+    </div>
+   
+  
+</section>
+
+{% endblock %}

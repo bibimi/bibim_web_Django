@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}{% static 'css/a-detail.css' %}{% endblock %}
+
+{% block content %}
+
+<section class="artist-content">
+    <!-- 아티스트 정보 -->
+    <div class="artist_bundle">
+
+       <div class="container">
+           <div class="item artist_name">혁오 (HYUKOH)</div>
+           <div class="item artist_img_grid">
+               <img class = "artist_img" src= "{% static 'image/16.jpg' %}" alt="혁오-공드리">
+           </div>
+
+           <div class="item artist_info_grid">
+               <dl class="artist_info">
+                   <dt id="artist_info-dt">유형</dt>
+                   <dd>남성 그룹</dd>
+                   <dt id="artist_info-dt">국적</dt>
+                   <dd>대한민국</dd>
+                   <dt id="artist_info-dt">멤버</dt>
+                   <dd>오혁, 이인우, 임동건, 임현제</dd>
+                   <dt id="artist_intro">아티스트 소개</dt>
+                   <dd>랄ㄹ랄ㄹ랄 라랄ㄹ랄ㄹㄹ 라라라랄 라라라라랄 라라라라라라
+                   </dd>
+               </dl>
+           </div>
+
+           <div class="item artist_SNS">
+               <a href="#">
+                   <img class="icon instagram" src="img/sns아이콘png파일/인스타그램1.png" alt="instagram">
+               </a>
+               <a href="#">
+                   <img class="icon facebook"src="img/sns아이콘png파일/페이스북.png" alt="facebook">
+               </a>
+               <a href="#">
+                   <img class="icon twitter" src="img/sns아이콘png파일/트위터2.png" alt="twiiter">
+               </a>
+               <a href="#">
+                   <img class="icon youtube" src="img/sns아이콘png파일/유튜브2.png" alt="youtube">
+               </a>
+               <a href="#">
+                   <img class="icon soundcloud" src="img/sns아이콘png파일/사운드클라우드.png" alt="soundcloud">
+               </a>
+           </div>
+
+           <div class="item artist_tracklist">
+               <button class="btn-tracklist">TRACK LIST</button>
+           </div>
+           <div class="item community">
+               <!-- <button class="btn-stream">STREAM</button> -->
+           </div>
+           <div class="item artist_track">
+               <ul class="number">
+                   <li>1</li>
+               </ul>
+           </div>
+           <div class="item artist_track">
+               <ul class="musictitle">
+                   <li>title</li>
+               </ul>
+           </div>
+           
+           <div class="item artist_track">
+               <button class="btn-play">
+                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                   </svg>
+               </button>
+           </div>
+       </div>  
+    </div>
+   
+  
+</section>
+
+{% endblock %}

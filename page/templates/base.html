@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BIBIMUSIC</title>
+    <meta author="BIBIM CREW">
+    <meta name="description" content="BIBIM MUSIC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <!-- http://ogp.me/ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIBIM">
+<meta property="og:title" content="for all the colorful music">
+<meta property="og:description" content="세상을 더 다채롭게, 비빔은 어쩌저쩌 어쩌구">
+<meta property="og:image" content="imgs/대표이미지.jpg">
+<meta property="og:url" content="#">
+    <!-- Twitter Card -->
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="BIBIM">
+<meta property="twitter:title" content="for all the colorful music">
+<meta property="twitter:description" content="세상을 더 다채롭게, 비빔은 어쩌저쩌 어쩌구.">
+<meta property="twitter:image" content="imgs/대표이미지.jpg">
+<meta property="twitter:url" content="#">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% block link %} {% endblock %}">
+</head>
+
+<body>
+<div class = "body__container" >
+
+    <!-- HEADER영역 -->
+    <header class="section">
+
+        <div class="inner">
+            <div class="bundle">
+                <div class="logo">
+                    <a href="{% url 'main' %}">BIBIM</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="{% url 'music' %}">음악</a></li>
+                    <li><a href="{% url 'artist' %}">아티스트</a></li>
+                    <li><a href="{%url 'story' %}">스토리</a></li>
+                    <li><a href="{% url 'mypage' %}">마이 페이지</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+
+
+
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+
+</html>

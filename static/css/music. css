@@ -1,0 +1,48 @@
+.section-music {
+
+}
+
+.music_list {
+
+}
+
+.music_list_li {
+
+}
+
+.music {
+
+}
+
+.album_art {
+
+}
+
+.cover-img-box {
+
+}
+
+.cover_outline {
+
+}
+
+.cver_sideline {
+
+}
+
+.cover_img {
+    width : 20px;
+    height : 20px;
+}
+
+.music_info {
+
+}
+
+.artist_name {
+
+}
+
+.music_title {
+
+}

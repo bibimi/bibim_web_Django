@@ -1,0 +1,65 @@
+/* COMMON */
+.body-container {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body__container {
+    background-color: #cda0eb;
+    background-repeat: no-repeat;
+}
+
+/* HEADER영역 */
+header {
+
+}
+
+header .inner {
+    max-width:1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+header .bundle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo a {
+    display: block;
+    padding: 5px;
+    margin: 20px 40px;
+    font-size:24px;
+    font-weight: 500;
+    color: #FFF;
+}
+header .menu {
+    display:flex;
+    float: right;
+}
+
+header .menu li a {
+    display: block;
+    padding: 10px;
+    margin: 20px 40px;
+    color: #FFF;
+}
+
+header .menu li a:hover {
+    font-weight: 500;
+}
+
+

@@ -1,0 +1,138 @@
+section {
+    background-color: #cda0eb;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+}
+
+/* section .container {
+    position: absolute;
+} */
+
+.music-box {
+    
+}
+
+
+.section-music {
+    max-width: 1300px;
+    margin: 0 auto;
+    
+    
+}
+
+.music_all {
+    color: white;
+    font-size:30px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.music_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music_bundle {
+    margin: 20px;
+    
+    
+}
+
+.album_art {
+    width: 280px;
+    height: 280px;
+
+}
+
+
+.cover-img-box {
+    position: relative;
+    border: 2px solid black;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play_circle {
+    display: absolute;
+    border-radius: 70%;
+    z-index: 5;
+    border: 5px solid white;
+    color: white;
+    background:none;
+    width: 90px;
+    height: 90px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.btn-play_circle svg {
+    display: block;
+    padding-left: 8px;
+}
+
+a {color:#fff;}
+a:link {color: white}
+a:visited {color: white}
+
+
+.white_sideline {
+    position: absolute;
+    background-color: white;
+    width: 260px;
+    height: 260px;
+    z-index: 4;
+
+}
+.cover_outline {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 4;
+    left: 8px;
+    top: 10px;
+
+}
+
+.cover_sideline {
+    position: absolute;
+    
+    width: 260px;
+    height: 260px;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 3;
+
+}
+
+.cover_img {
+    width : 250px;
+    height : 250px;
+    position: absolute;
+    z-index: 4;
+}
+
+.music_info {
+    margin-left: 20px;
+    color: white;
+    
+
+}
+
+.artist_name {
+
+}
+
+.music_title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+
+}

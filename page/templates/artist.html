@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}{% static 'css/artist.css' %}{% endblock %}
+
+{% block content %}
+
+<section class="artist-content">
+    <!-- 아티스트 정보 -->
+   <div class = "artist_info_box">
+       <div class = "artist_name">
+           혁오 (HYUKOH)
+       </div>
+
+       <div class = "wrapper-clearfix">
+           <div class = "artist_img_box">
+               <img class = "artist_img" src= "{% static 'image/16.jpg' %}" alt="혁오-공드리">
+           </div>
+           <dl class="artist_info">
+               <dt>유형</dt>
+               <dd>남성 그룹</dd>
+               <dt>국적</dt>
+               <dd>대한민국</dd>
+               <dt>아티스트 소개</dt>
+               <dd id="artist_intro">랄ㄹ랄ㄹ랄 라랄ㄹ랄ㄹㄹ 라라라랄 라라라라랄 라라라라라라
+               </dd>
+           </dl>
+       </div>
+   </div>
+
+<!-- 아티스트 부속 메뉴 -->
+   <div class = artist-info-btn>
+       <button class = btn artist-music>전체 곡</button>
+       <button class = btn getstream>소통</button>
+   </div>
+
+  
+</section>
+
+{% endblock %}
