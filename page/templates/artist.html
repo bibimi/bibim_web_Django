@@ -5,36 +5,43 @@
 
 {% block content %}
 
-<section class="artist-content">
-    <!-- 아티스트 정보 -->
-   <div class = "artist_info_box">
-       <div class = "artist_name">
-           혁오 (HYUKOH)
-       </div>
+<section class="music">
 
-       <div class = "wrapper-clearfix">
-           <div class = "artist_img_box">
-               <img class = "artist_img" src= "{% static 'image/16.jpg' %}" alt="혁오-공드리">
-           </div>
-           <dl class="artist_info">
-               <dt>유형</dt>
-               <dd>남성 그룹</dd>
-               <dt>국적</dt>
-               <dd>대한민국</dd>
-               <dt>아티스트 소개</dt>
-               <dd id="artist_intro">랄ㄹ랄ㄹ랄 라랄ㄹ랄ㄹㄹ 라라라랄 라라라라랄 라라라라라라
-               </dd>
-           </dl>
-       </div>
-   </div>
+    <div class=music-box>
+        <div class='section-music'>
+            <div class='music_all'>ㅣ전체 음악ㅣ</div>
 
-<!-- 아티스트 부속 메뉴 -->
-   <div class = artist-info-btn>
-       <button class = btn artist-music>전체 곡</button>
-       <button class = btn getstream>소통</button>
-   </div>
+            <div class='music_list'>
+                <!-- list 1 -->
+                <div class='music_bundle'>
+                    <div class='album_art'>
+                        <div class='cover-img-box'>
+                            <div class="btn-play_circle">
+                                <a href="{% url 'm-detail' %}">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <img class="cover_img" src='{% static 'image/16.jpg' %}' alt='혁오-공드리'>
+                        </div>
+                    </div>
+                    <div class='music_info'>
+                        <div class='artist_name'>혁오</div>
+                        <div class='artist_type'>위잉위잉</div>
+                    </div>
+                </div>
+            </div>
 
-  
+        </div>
+    </div>
+</div>
+
+
+
+
+
 </section>
-
 {% endblock %}

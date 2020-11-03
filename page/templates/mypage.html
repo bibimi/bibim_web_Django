@@ -1,8 +1,111 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block link %}{% static 'css/artist.css' %}{% endblock %}
+{% block link %}{% static 'css/mypage.css' %}{% endblock %}
 
 {% block content %}
+
+<section class="mypage">
+
+    <div class="container">
+        <div class="item user_name">아무개</div>
+        <div class="item user_img"></div>
+        <!--미등록시 기본 이미지-->
+        <div class="item user_type">Listener</div>
+        <!--뮤지션 등록 후 musician으로 뜰 수 있도록-->
+        <div class="item user_info">안녕하세요. 아무개입니다. 저는 오징어를 좋아합니다.</div>
+        <div class="item show_pallette">
+            <a href="music-detail.html">
+                팔레트 보기
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- 뮤지션 정보 -->
+    <div class="block musician_info_block">
+        <p>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+            등록 아티스트 정보
+        </p>
+    </div>
+
+    <!-- 뮤지션 정보 드롭다운 -->
+    <div class="dropdown_bundle">
+        <!-- 드롭다운 박스 1 -->
+        <div class="dropdown_box">
+
+            <a class="update" href="#">
+                수정하기
+            </a>
+            <div class="dropdown">
+                <div class="dropown_item artist_img_item">
+                    <img class="artist_img" src="{% static 'image/16.jpg' %}" alt="혁오-공드리">
+                </div>
+
+                <div class="dropdow_item artist_info_item">
+                    <dl class="artist_info">
+                        <dt id="artist_info-dt">활동명</dt>
+                        <dd>혁오 (HYUKOH)</dd>
+                        <dt id="artist_info-dt">유형</dt>
+                        <dd>남성 그룹</dd>
+                        <dt id="artist_info-dt">국적</dt>
+                        <dd>대한민국</dd>
+                        <dt id="artist_info-dt">멤버</dt>
+                        <dd>오혁, 이인우, 임동건, 임현제</dd>
+                        <dt id="artist_intro">아티스트 소개</dt>
+                        <dd>랄ㄹ랄ㄹ랄 라랄ㄹ랄ㄹㄹ 라라라랄 라라라라랄 라라라라라라 라라라라라라라라라라
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 뮤지션 정보 새로 등록 -->
+        <div class="dropdown_bundle_null">
+            <a class="create" href="#">
+                아티스트 정보 등록하기
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 음악 정보 -->
+    <div class="block musician_info_block">
+        <p>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+            등록 음악 정보
+        </p>
+    </div>
+
+    <!-- 뮤지션 정보 드롭다운 -->
+    <div class="dropdown_bundle">
+        <!-- 드롭다운 박스 1 -->
+
+        <!-- 뮤지션 정보 새로 등록 -->
+        <div class="dropdown_bundle_null">
+            <a class="create" href="#">
+                음악 정보 등록하기
+            </a>
+        </div>
+
+    </div>
+    
+</section>
 
 {% endblock %}

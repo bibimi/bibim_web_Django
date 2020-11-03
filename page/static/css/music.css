@@ -1,8 +1,4 @@
-section {
-    background-color: #cda0eb;
-    background-repeat: no-repeat;
-    padding: 160px 0;
-}
+
 
 /* section .container {
     position: absolute;
@@ -47,7 +43,7 @@ section {
 
 .cover-img-box {
     position: relative;
-    border: 2px solid black;
+    border: 2px solid rgb(59, 9, 71);
     width: 260px;
     height: 260px;
     display: flex;
@@ -94,7 +90,7 @@ a:visited {color: white}
     width: 255px;
     height: 255px;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(59, 9, 71);
     z-index: 4;
     left: 8px;
     top: 10px;
@@ -107,7 +103,7 @@ a:visited {color: white}
     width: 260px;
     height: 260px;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(59, 9, 71);
     z-index: 3;
 
 }

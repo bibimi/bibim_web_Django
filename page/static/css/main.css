@@ -1,7 +1,5 @@
 section {
-    background-color: #cda0eb;
-    background-repeat: no-repeat;
-    padding-top: 160px;
+    padding-top: 10vh;
 }
 
 /* section .container {
@@ -12,7 +10,18 @@ section {
 /* main 영억 */
 section .main_bundle {
     overflow: hidden;
-    height: 775px;
+    height: 70vh;
+}
+
+section .flex-box {
+    display: flex;
+    justify-content: center;
+    max-width: 1008px;
+    margin: 0 auto;
+}
+
+section .center-box {
+    padding-left:20px;
 }
 
 section .player {
@@ -20,7 +29,7 @@ section .player {
     align-items: center;
     margin : 0 auto;
     max-width: 140px;
-    margin-top: 170px;
+    margin-top: 5vh;
     padding-left: 20px;
     font-size: 20px;
 }
@@ -35,21 +44,10 @@ svg {
     margin: 10px;
 }
 
-.flex-box {
-    display: flex;
-    justify-content: center;
-    max-width: 1008px;
-    margin: 0 auto;
-}
-
-.center-box {
-    padding-left:20px;
-}
-
 /* 앨범 이미지 영역 */
-.album {
+/* .album {
 
-}
+} */
 
 .wrapper {
     display: flex;
@@ -68,8 +66,8 @@ section .inner {
 }
 .album-box {
     margin: auto;
-    width: 750px;
-    height: 750px;
+    width: 100vh;
+    height: 100vh;
     border-radius: 70% 70%;
     overflow: hidden;
     box-shadow:6px 6px 6px 6px #363436;
@@ -82,23 +80,21 @@ section .inner {
     object-fit: cover;
 }
 
-.album-inner-line {
-    position: absolute;
-    top: 220px;
-    left: 200px;
-}
+
+
 
 .inner-line-img {
-    width: 130%;
-    height: 130%;
-    object-fit: cover;
+    height: 38%;
+    position: absolute;
+    left: 27%;
+    top: 27%;
 }
 
 .player-side {
     color: white;
     width: 50px;
     height: 200px;
-    margin-top: 550px;
+    margin-top: 50vh;
     margin-left: 20px;
 }
 

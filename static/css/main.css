@@ -1,7 +1,5 @@
 section {
-    background-color: #cda0eb;
-    background-repeat: no-repeat;
-    padding-top: 160px;
+    padding-top: 20vh;
 }
 
 /* section .container {
@@ -12,7 +10,7 @@ section {
 /* main 영억 */
 section .main_bundle {
     overflow: hidden;
-    height: 775px;
+    height: 50vh;
 }
 
 section .player {
@@ -20,7 +18,6 @@ section .player {
     align-items: center;
     margin : 0 auto;
     max-width: 140px;
-    margin-top: 170px;
     padding-left: 20px;
     font-size: 20px;
 }
@@ -47,9 +44,9 @@ svg {
 }
 
 /* 앨범 이미지 영역 */
-.album {
+/* .album {
 
-}
+} */
 
 .wrapper {
     display: flex;

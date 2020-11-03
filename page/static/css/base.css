@@ -1,4 +1,7 @@
 /* COMMON */
+body {
+    background-color: #ddc8ef;
+}
 .body-container {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
@@ -10,7 +13,7 @@ a {
 }
 
 .body__container {
-    background-color: #cda0eb;
+    background-color: #ddc8ef;
     background-repeat: no-repeat;
 }
 
@@ -20,46 +23,40 @@ header {
 }
 
 header .inner {
-    max-width:1200px;
-    height: 80px;
+    max-width:1100px;
+    height: 20vh;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 header .bundle {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    content: "";
-    clear: both;
-    display: block;
+    
 }
 
 header .logo {
-    float: left;
-}
-
-header .logo a {
     display: block;
     padding: 5px;
-    margin: 20px 40px;
     font-size:24px;
     font-weight: 500;
-    color: #FFF;
+    color: #ffffff;
 }
 header .menu {
-    display:flex;
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
 }
 
 header .menu li a {
     display: block;
-    padding: 10px;
-    margin: 20px 40px;
-    color: #FFF;
+    color: #ffffff;
 }
 
 header .menu li a:hover {
     font-weight: 500;
+    color: #aa6edf;
 }
 
 

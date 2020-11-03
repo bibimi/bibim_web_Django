@@ -1,0 +1,146 @@
+.mypage {
+    padding-left: 200px
+}
+.container {
+    display: grid;
+    border: 2px solid;
+    grid-template-rows: 50px 100px 150px 50px;
+    grid-template-columns: 300px 700px;
+    width: 1000px;
+}
+
+.item {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+
+.item:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.item:nth-child(2) {
+    grid-row: 2/5;
+}
+
+.block {
+    width: 60vw;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #cda0eb;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.block p {
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown_bundle{
+    position: relative;
+    width: 60vw;
+    background-color: rgb(247, 238, 247);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.dropdown_box{
+    position: relative;
+}
+
+.dropdown_box .update {
+    position: absolute;
+    left: 20px;
+    top: 4px;
+}
+
+.dropdown {
+    display: flex;
+    padding: 20px;
+    
+    
+}
+
+.artist_img_item {
+    flex: 1 1 20%;
+}
+
+.artist_img_item img {
+    width: 100%;
+}
+
+.artist_info_item {
+    flex: 1 1 80%;
+    padding-left: 10px;
+    position: relative;
+    
+}
+
+.dropdown_item .update {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+}
+
+.dropdown_bundle .create {
+    text-decoration: none;
+    width: auto;
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+a:link {color: rgb(61, 59, 60)}
+a:visited {color: rgb(61, 59, 60)}
+
+#artist_intro {
+    width: 130px;
+    padding-left: 2px;
+    font-size: 1.1em;
+    line-height: 20px;
+    display: block;
+    color: rgb(61, 59, 60);
+    padding: 5px;
+    
+}
+
+#artist_info-dt {
+    float: left;
+    width: 150px;
+    padding-left: 2px;
+    font-size: 1.1em;
+    line-height: 20px;
+    display: block;
+    color: rgb(118, 105, 121);
+    padding-bottom: 5px;
+}
+
+.artist_info_item dd {
+    
+    width: 90%;
+    font-size: 1.1em;
+    line-height: 20px;
+    display: block;
+    color: #51276d;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.dropdown_bundle_null {
+    position: relative;
+    width: 60vw;
+    height: 13vw;
+    background-color: rgb(247, 238, 247);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
